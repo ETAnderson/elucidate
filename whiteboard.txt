@@ -1,0 +1,6 @@
+take a sentence,
+extract all the words
+one by one, display all the words, with their definition, and a correct/incorrect
+if correct, ask if you want to be asked about this word again
+if incorrect, display a list of synonyms, with definitions with the option to select as a replacement.
+return completed string
