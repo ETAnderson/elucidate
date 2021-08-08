@@ -1,6 +1,23 @@
-take a sentence,
-extract all the words
-one by one, display all the words, with their definition, and a correct/incorrect
+take a sentence
+
+extract all the words - store in redis - run spellchecker on each word.
+
+one by one, display all the words, with their definition, and a correct/incorrect - create a dictionary of "word" : "meanings"
+
 if correct, ask if you want to be asked about this word again
+    if yes: do nothing
+    if no: add to a list and check all words against this list.
+
 if incorrect, display a list of synonyms, with definitions with the option to select as a replacement.
-return completed string
+
+return completed sentence
+
+JSON dictionary format reference outline
+
+'meanings'
+    'partOfSpeech'
+        'definitions'
+            'definition'
+            'examples'
+            'antonyms'
+            'synonyms'

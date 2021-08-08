@@ -27,8 +27,8 @@ def get_sentence_of_definitions(sentence):
     for word in sentence:
         definition = get_definition(word)
         word_definitions.append(definition)
-        newworddef = print(word)
-        newworddef = print(word_definitions)
+        # newworddef = print(word)
+        # newworddef = print(word_definitions)
 
     return word_definitions
 
