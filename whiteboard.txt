@@ -12,6 +12,9 @@ if incorrect, display a list of synonyms, with definitions with the option to se
 
 return completed sentence
 
+
+maybe build an asgi app and use redis/channels to make it single page/responsive
+
 JSON dictionary format reference outline
 
 'meanings'
@@ -21,3 +24,25 @@ JSON dictionary format reference outline
             'examples'
             'antonyms'
             'synonyms'
+
+
+['big', 'house']
+[{'meanings': 
+    [{'partOfSpeech': 'adjective', 'definitions': 
+        [{'definition': 'of considerable size or extent.',
+        'example': 'her big hazel eyes', 'synonyms': ['large', 'sizeable', 'of considerable size', 'substantial', 'considerable', 'great', 'huge', 'immense', 'enormous', 'extensive', 'colossal', 'massive', 'mammoth', 'vast', 'prodigious', 'tremendous', 'gigantic', 'giant', 'monumental', 'mighty', 'stupendous', 'gargantuan', 'elephantine', 'titanic', 'epic', 'mountainous', 'megalithic', 'monstrous', 'Brobdingnagian', 'towering', 'tall', 'high', 'lofty', 'outsize', 'oversized', 'overgrown', 'cumbersome', 'unwieldy', 'inordinate', 'unlimited', 'goodly', 'capacious', 'voluminous', 'commodious', 'spacious', 'good-size(d)', 'fair-size(d)', 'king-size(d)', 'man-size', 'family-size(d)', 'economy-size(d)', 'jumbo', 'whopping', 'whopping great', 'thumping', 'thumping great', 'bumper', 'mega', 'humongous', 'monster', 'astronomical', 'cosmic', 'almighty', 'dirty great', 'socking great', 'tidy', 'whacking', 'whacking great', 'ginormous', 'massy', 'well built', 'sturdily built', 'heavily built', 'sturdy', 'brawny', 'burly', 'broad-shouldered', 'muscular', 'muscly', 'well muscled', 'robust', 'rugged', 'lusty', 'Herculean', 'bulky', 'strapping', 'thickset', 'stocky', 'solid', 'hefty', 'meaty', 'fat', 'stout', 'portly', 'plump', 'heavy', 'overweight', 'oversize', 'fleshy', 'paunchy', 'corpulent', 'obese', 'hunky', 'hulking', 'beefy', 'husky', 'buff', 'stalwart', 'thewy', 'stark'],
+        'antonyms': ['small', 'little', 'slight', 'short']}, {'definition': 'of considerable importance or seriousness.', 'example': "it's a big decision",
+        'synonyms': ['important', 'significant', 'major', 'of great import', 'of significance', 'momentous', 'of moment', 'weighty', 'consequential', 'of consequence', 'far-reaching', 'key', 'vital', 'critical', 'crucial', 'life-and-death', 'high-priority', 'serious', 'grave', 'solemn', 'no joke', 'no laughing matter'],
+        'antonyms': ['minor', 'unimportant', 'trivial']}, {'definition': 'generous.', 'example': "‘I'm inclined to take pity on you.’ ‘That's big of you !’", 'synonyms': ['generous', 'kind', 'kindly', 'kind-hearted', 'caring', 'compassionate', 'loving', 'benevolent', 'magnanimous', 'unselfish', 'altruistic', 'selfless', 'philanthropic'], 'antonyms': []}]}, 
+    {'partOfSpeech': 'verb', 'definitions': 
+        [{'definition': 'praise or recommend something highly.', 
+        'example': "the record's been on the streets a while now, but it's still worth bigging up", 
+        'synonyms': [], 
+        'antonyms': []}]}, 
+    {'partOfSpeech': 'noun', 'definitions': 
+        [{'definition': 'the major league in a professional sport.', 
+        'example': 'the day he made it to the bigs, he forgot every minor league ballpark he ever played in', 
+        'synonyms': [], 
+        'antonyms': []}]}]}, 
+{'meanings': 
+    [{'partOfSpeech': 'noun', 'definitions': [{'definition': 'a building for human habitation, especially one that consists of a ground floor and one or more upper storeys.', 'example': 'my wife and I are moving to a new house', 'synonyms': ['home', 'place of residence', 'homestead', 'lodging place', "a roof over one's head", 'habitation', 'residence', 'dwelling', 'dwelling place', 'abode', 'domicile'], 'antonyms': []}, {'definition': 'a building in which people meet for a particular activity.', 'example': 'a house of prayer', 'synonyms': [], 'antonyms': []}, {'definition': 'a religious community that occupies a particular building.', 'example': 'the Cistercian house at Clairvaux', 'synonyms': [], 'antonyms': []}, {'definition': 'a legislative or deliberative assembly.', 'example': "the sixty-member National Council, the country's upper house", 'synonyms': ['legislative assembly', 'legislative body', 'chamber', 'council', 'parliament', 'diet', 'congress', 'senate'], 'antonyms': []}, {'definition': 'a style of electronic dance music typically having sparse, repetitive vocals and a fast beat.', 'example': 'DJs specializing in techno, garage, and house', 'synonyms': [], 'antonyms': []}, {'definition': 'a twelfth division of the celestial sphere, based on the positions of the ascendant and midheaven at a given time and place, and determined by any of a number of methods.', 'synonyms': [], 'antonyms': []}, {'definition': 'old-fashioned term for bingo.', 'synonyms': [], 'antonyms': []}]}, {'partOfSpeech': 'adjective', 'definitions': [{'definition': '(of an animal or plant) kept in, frequenting, or infesting buildings.', 'synonyms': [], 'antonyms': []}, {'definition': 'relating to a firm, institution, or society.', 'example': 'a house journal', 'synonyms': [], 'antonyms': []}]}, {'partOfSpeech': 'verb', 'definitions': [{'definition': 'provide with shelter or accommodation.', 'example': 'they converted a disused cinema to house twelve employees', 'synonyms': ['accommodate', 'provide accommodation for', 'provide with accommodation', 'give accommodation to', 'make space for', 'make room for', 'provide with a place to work', 'harbour', 'lodge', 'quarter', 'board', 'billet', 'take in', 'provide shelter for', 'shelter', 'sleep', 'put up', 'give a bed to', 'provide with a place to sleep'], 'antonyms': ['evict']}, {'definition': 'provide space for; contain or accommodate.', 'example': 'the museum houses a collection of Roman sculpture', 'synonyms': ['contain', 'hold', 'store', 'cover', 'protect', 'enclose', 'encase', 'sheathe', 'keep safe'], 'antonyms': ['expose']}, {'definition': 'eat the whole of (something), typically very quickly.', 'example': "it could be that I just housed a massive burrito, but I don't feel good", 'synonyms': [], 'antonyms': []}]}]}]

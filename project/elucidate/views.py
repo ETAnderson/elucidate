@@ -27,11 +27,11 @@ class Elucidate(Sentence, KnownWords):
 
         return sentence
 
-    def get_sentence_of_definitions(self, sentence):
+    def get_sentence_of_definitions(self):
         # compiles all the definitions into a sentence structure(list of json dict on a per word basis)
         word_definitions = []
 
-        for word in sentence:
+        for word in self.sentence:
             definition = self.get_definition(word)
             word_definitions.append(definition)
 
@@ -41,3 +41,4 @@ class Elucidate(Sentence, KnownWords):
 class IndexView(generic.ListView):
     template_name = 'word.html'
     context_object_name = 'sentence_word_list'
+    model = Word
